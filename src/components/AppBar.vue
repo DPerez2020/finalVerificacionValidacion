@@ -20,7 +20,7 @@
       <v-btn icon>
         <v-icon>fas fa-user</v-icon>
       </v-btn>
-      <v-btn>
+      <v-btn color="#1D4F91" elevation="0">
         Dawin Rafael Perez Batista
       </v-btn>      
       <v-menu
@@ -29,7 +29,7 @@
       >
         <template v-slot:activator="{ on, attrs }">
           <v-btn
-            icon
+            icon            
             v-bind="attrs"
             v-on="on"
           >
