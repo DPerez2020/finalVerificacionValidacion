@@ -98,7 +98,6 @@
     </v-dialog>
   </div>
 </template>
-
 <script>
 import api from "../http/api";
 export default {
@@ -155,7 +154,7 @@ export default {
       ],
       items: [        
       ],
-       today: "2021-12-02",
+      today: "2021-12-02",
       events: [],
     };
   },
@@ -165,8 +164,6 @@ export default {
       api.obtenerAsignaturasPorPeriodo(this.periodoSeleccionado).then(d=>{
         this.items=d
         this.events=this.items.map(x=>x.horario)
-        console.log(this.items);
-        console.log(this.events);
         })
       // this.events=this.items.map(()=>{
       //   return {
